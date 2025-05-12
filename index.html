@@ -18,6 +18,10 @@
             <a href="#" class="logo">
                 <img src="/image/logo.png" alt="Caterpillar Logo" />
             </a>
+            <button class="menu-btn">
+                <span class="menu-text">MENU</span>
+                <span class="material-icons">menu</span>
+            </button>
             <ul class="nav-links flex gap-8 text-sm">
                 <li><a href="#">SERVICES</a></li>
                 <li><a href="#">PORTFOLIO</a></li>
@@ -192,6 +196,15 @@
             </div>
         </div>
     </footer>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+            menuBtn.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>
