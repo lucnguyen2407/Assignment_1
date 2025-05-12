@@ -1,0 +1,265 @@
+/* ===== Box & Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: #111;
+  background-color: #fff;
+}
+
+/* ===== Layout ===== */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.fixed {
+  position: fixed;
+}
+
+/* Flexbox */
+.flex {
+  display: flex;
+}
+.inline-flex {
+  display: inline-flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.align-items-center {
+  align-items: center;
+}
+.gap-4 {
+  gap: 1rem;
+}
+.gap-8 {
+  gap: 2rem;
+}
+
+/* ===== Spacing ===== */
+.p-1 {
+  padding: 0.25rem;
+}
+.p-2 {
+  padding: 0.5rem;
+}
+.p-4 {
+  padding: 1rem;
+}
+.p-6 {
+  padding: 1.5rem;
+}
+.p-8 {
+  padding: 2rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.m-4 {
+  margin: 1rem;
+}
+.mt-4 {
+  margin-top: 1rem;
+}
+.mt-8 {
+  margin-top: 2rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.mb-8 {
+  margin-bottom: 2rem;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.max-w-xl {
+  max-width: 36rem;
+}
+
+/* ===== Text ===== */
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+.text-md {
+  font-size: 1rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+.text-2xl {
+  font-size: 1.5rem;
+}
+.text-3xl {
+  font-size: 2rem;
+}
+.text-4xl {
+  font-size: 3rem;
+}
+.font-bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+.text-decoration-none {
+  text-decoration: none;
+}
+
+/* ===== Backgrounds ===== */
+.bg-white {
+  background-color: #fff;
+}
+.bg-black {
+  background-color: #000;
+}
+.bg-gray {
+  background-color: #f1f1f1;
+}
+.bg-yellow {
+  background-color: #f5c518;
+}
+
+/* ===== Text Color ===== */
+.text-white {
+  color: #fff;
+}
+.text-black {
+  color: #000;
+}
+.text-gray {
+  color: #555;
+}
+.text-yellow {
+  color: #f5c518;
+}
+
+.text-shadow-basic {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+.font-geo {
+  font-family: "Georgia", serif;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn-yellow {
+  background-color: #f5c518;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-yellow:hover {
+  background-color: #e4b814;
+}
+
+/* ===== Border & Radius ===== */
+.rounded {
+  border-radius: 4px;
+}
+.rounded-full {
+  border-radius: 9999px;
+}
+.border {
+  border: 1px solid #ccc;
+}
+
+/* ===== Width ===== */
+.w-full {
+  width: 100%;
+}
+.max-w-md {
+  max-width: 768px;
+}
+
+/* ===== Utility ===== */
+.hidden {
+  display: none;
+}
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+.text-sm {
+  font-size: 0.875rem;
+}
+.text-base {
+  font-size: 1rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .md\\:flex-col {
+    flex-direction: column;
+  }
+  .md\\:text-center {
+    text-align: center;
+  }
+}
