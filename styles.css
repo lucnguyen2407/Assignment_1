@@ -56,6 +56,20 @@
   color: #666;
 }
 
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.service-item {
+  max-width: 100%;
+  text-align: center;
+}
+
 .icon-circle {
   background-color: #f5c518;
   width: 100px;
@@ -70,11 +84,6 @@
 .icon-circle .material-icons {
   font-size: 60px;
   color: white;
-}
-
-.service-item {
-  max-width: 300px;
-  text-align: center;
 }
 
 .portfolio-section {
@@ -123,9 +132,9 @@
 .team-grid {
   display: flex;
   justify-content: center;
-  gap: 8rem;
-  flex-wrap: wrap;
+  gap: 4rem;
   margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
 .team-member {
@@ -172,7 +181,7 @@
 
 .site-footer {
   background-color: #fff;
-  padding: 3rem 1rem;
+  padding: 3rem 1rem 0 1rem;
   text-align: center;
   color: #555;
   font-size: 0.875rem;
@@ -199,9 +208,33 @@
   opacity: 1;
 }
 
+.footer-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
 .footer-social {
   display: flex;
   gap: 1rem;
+  justify-content: center;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-links a {
+  color: #f5c518;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #c49e00;
 }
 
 .footer-social a {
@@ -221,21 +254,6 @@
 .footer-social a:hover {
   background-color: #f5c518;
   color: #000;
-}
-
-.footer-links {
-  display: flex;
-  gap: 1rem;
-}
-
-.footer-links a {
-  color: #f5c518;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.footer-links a:hover {
-  color: #c49e00;
 }
 
 .menu-btn {
@@ -321,6 +339,40 @@
   .footer-logos img {
     max-width: 150px;
   }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footer-bottom p {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-social {
+    margin: 1rem 0;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .team-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .team-member {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .team-photo {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 /* Desktop Styles */
@@ -335,6 +387,19 @@
 
   .portfolio-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .team-grid {
+    flex-direction: row;
+  }
+
+  .team-member {
+    max-width: 250px;
+  }
+
+  .team-photo {
+    width: 240px;
+    height: 240px;
   }
 }
 
@@ -356,6 +421,20 @@
 
   .footer-logos img {
     max-width: 150px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .service-item {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .services-section {
+    padding: 3rem 1rem;
   }
 }
 
